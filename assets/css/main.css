@@ -96,6 +96,7 @@ html,body {
     width: 60%;
     color : white;
     font-weight : bold;
+	cursor: pointer;
 }
 
 #work-area{
