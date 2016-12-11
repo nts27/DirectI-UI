@@ -1,0 +1,482 @@
+[class*="col-"] {
+    float: left;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+#main-div{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: block;
+    clear: both;
+    content: "";
+}
+
+#left-menu{
+    float: left;
+    height: 200%;
+    display: table-cell;
+    background-color: dimgrey;
+}
+
+.menu-ul{
+    margin: 0;
+    padding: 0;
+    color: lightgrey;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+    border-bottom: 1px solid lightgray;
+    font-size: 12px;
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+}
+
+#compose-ul{
+    background-color: dimgrey;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    padding: 28px 0px 85px 1px;
+}
+
+#btn-compose{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #CE503E;
+    position: relative;
+    left: 20%;
+    top: 25%;
+    float: left;
+    width: 60%;
+    color : white;
+    font-weight : bold;
+}
+
+#work-area{
+    background-color: white;
+    float: left;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+}
+
+#heading-bar{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    padding: 46px 0px 32px 25px;
+}
+
+#inbox-table{
+    background-color: white;
+    height: 80%;
+    position: relative;
+    width: 100%;
+}
+
+#heading-label{
+    font-family: arial,sans-serif;
+    font-size: 49px;
+	padding-right: 50px;
+    position: relative;
+}
+
+#searchBox {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: url("../images/glyphicons-28-search.png") no-repeat;
+    position: relative;
+    right: 50px;
+    background-position: right;
+    float: right;
+    width: 25%;
+}
+
+.menu-ul li{
+    list-style: none;
+    padding: 15px 0 0px 35px;
+    height: 30px;
+}	
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li .check{
+  display: block;
+  position:relative;
+  border-radius: 100%;
+  height: 22px;
+  width: 22px;
+  margin-top: -7px;
+  z-index: 5;
+  cursor:pointer;
+}
+
+.work{
+	border: 2px solid #41B2CE;
+}
+.code{
+	border: 2px solid orange;
+}
+.animal{
+	border: 2px solid #FA7041;
+}
+.fashion{
+	border: 2px solid #4BBE7D;
+}
+
+ul li .check::before {
+  display: block;
+  position: relative;
+  content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 7px;
+  left: 4px;
+  margin-top : -4px;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 2px solid #4BBE7D;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #4BBE7D;
+}
+
+input[type=radio]:checked ~ label{
+  color: white;
+}
+
+.main-selected{
+    background-color: white !important;
+    color:black !important;
+}
+
+.menu-item-selected{
+    background: #ce503e none repeat scroll 0 0 !important;
+    color: white !important;
+    border:none !important;
+}
+
+.menu-item-count{
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    color: lightgrey;
+    float: right;
+    font-size: 14px;
+    height: 18px;
+    padding-top: 3px;
+    position: relative;
+    right: 6%;
+    text-align: center;
+    width: 22px;
+    top: -3px;
+}
+
+.menu-icon{
+    background: url("../images/glyphicons-halflings-white-nav.png") scroll 0px 0px no-repeat;
+    height: 16px;
+    position: relative;
+    width: 16px;
+    display: inline-block;
+    padding-right: 8px;
+}
+.inbox{
+    background-position: -72px 0px; 
+}
+.dearest{
+    background-position: -94px 0px; 
+}
+.sent{
+    background-position: -216px -23px; 
+}
+.draft{
+    background-position: 0px -47px; 
+}
+.trash{
+    background-position: -457px 0px; 
+}
+
+.menu-label{
+    position: relative;
+    top: -3px;
+}
+
+.menu2-label{
+    position: relative;
+	padding-left: 40px;
+	top: -20px;    
+}
+
+.sub-main-selected{
+    background-color: grey !important;
+}
+
+.profile{
+    background-position: -311px -119px;
+    border: 1px solid;
+    border-radius: 10px;
+    float: right;
+    height: 16px !important;
+    right: 40%;
+    top: 71%;
+    width: 9px !important;
+    cursor : pointer;
+}
+
+#menu-ul-profile{
+    border-bottom: none;
+}
+
+#sub-menu-header-icon{
+    right: 10%;
+    border: none;
+    background-position: -406px -96px;
+    cursor : pointer;
+    top: 0%;
+}
+
+#sub-menu-header{
+   font-size: 10px;
+}
+
+#profile-image{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url("../images/profile.png") no-repeat;
+    position: relative;
+    left: 20%;
+}
+
+#heading-shortcut{
+    border-bottom: 1px solid darkgray;
+    position: relative;
+    width: 94%;
+    left: 2%;
+    padding-bottom: 27px;
+}
+
+.shortcut-icon{
+    background: url("../images/glyphicons-halflings-white-nav.png") no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.back-btn{
+    background-position: -333px -94px;
+}
+
+.fav{
+    background-position: -93px 2px;
+}
+
+.down-btn{
+    background-position: -310px -118px;
+}
+
+.clip{
+    background-position: -285px -46px; 
+}
+
+.sorting-menus{
+    height: 79%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.sorting-menus:hover{
+    border-bottom: 5px solid;
+    color: black;
+}
+
+.sorting-menus-selected{
+    border-bottom: 5px solid;
+    color: black;
+}
+
+#sorting-menus-section{
+    position: relative;
+    float: right;
+    height: 100%;
+}
+
+#sorting-menu-alphabetically{
+    float: left;
+    margin-right: 22px;
+}
+
+#sorting-menu-recent{
+    float: right;
+}
+
+.profile-img{
+    background: rgba(0, 0, 0, 0) url("../images/profile.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 64px;
+    left: 20%;
+    position: relative;
+    width: 64px;
+}
+
+#inbox-table > table{
+    font-family: arial,sans-serif;
+    color: gray;
+    width : 90%;
+    position: relative;
+    left: 2%;
+}
+
+#inbox-table > table > tbody >tr >td:nth-child(2){
+    font-weight: bold;
+    color : black;
+    padding-left: 20px;
+}
+
+#inbox-table > table > tbody >tr >td:nth-child(4){
+   text-align: right;
+   padding-left: 20px;
+}
+
+#inbox-table > table > tbody >tr >td:nth-child(3){
+    padding-left: 20px;
+}
+
+#inbox-table > table > tbody >tr:hover  td{
+    background : lightgrey;
+}
+
+.table-content-highlight{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.highlight-code{
+    background: orange none repeat scroll 0 0;
+}
+
+.highlight-animals{
+    background: #FA7041 none repeat scroll 0 0;
+}
+
+.highlight-fashion{
+    background: #4BBE7D none repeat scroll 0 0;
+}
+
+.highlight-work{
+    background: #41B2CE none repeat scroll 0 0;
+}
+
+#mail-attachment{
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url("../images/glyphicons-halflings-white-nav.png") no-repeat;
+    background-position: 0px -47px;
+}
+
+.shortcut-icon:hover{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+      from {
+        -webkit-transform:rotateY(0deg);
+      }
+      
+      to {
+        -webkit-transform:rotateY(360deg);
+      }
+}
+	
+@-ms-keyframes spin {
+      from {
+        -ms-transform: rotateY(0deg);
+      }
+      
+      to {
+		-ms-transform: rotateY(360deg);
+      }
+}
+	
+@-moz-keyframes spin {
+      from {
+		-moz-transform: rotateY(0deg);
+      }
+      
+      to {
+		-moz-transform: rotateY(360deg);
+      }
+}

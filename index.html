@@ -1,0 +1,147 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Direct-I</title>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <div id="main-div">
+        <div id = "left-menu" class="col-3 col-m-3">
+            <ul id="compose-ul">
+                <input type="button" value="Compose" id="btn-compose"/>
+            </ul>
+            <ul class="menu-ul">
+                <li class="main-selected"><span class="menu-icon inbox"></span><label class="menu-label">Inbox</label><span class="menu-item-count menu-item-selected">8</span></li>
+                <li><span class="menu-icon dearest"></span><label class="menu-label">Dearest</label></li>
+                <li><span class="menu-icon sent"></span><label class="menu-label">Sent</label></li>
+                <li><span class="menu-icon draft"></span><label class="menu-label">Drafts</label><span class="menu-item-count">4</span></li>
+                <li><span class="menu-icon trash"></span><label class="menu-label">Trash</label></li>
+            </ul>
+            <ul class="menu-ul">
+                <li id="sub-menu-header"><label>LABELS</label><span class="menu-icon profile" id="sub-menu-header-icon"></span></li>
+                <li><input type="radio" name="mail-type"/><div class="check work"><div class="inside"></div></div><label class="menu2-label">Work</label></li>
+                <li class="sub-main-selected"><input type="radio" checked  name="mail-type"/><div class="check fashion"><div class="inside"></div></div><label class="menu2-label">Fashion</label></li>
+                <li><input type="radio" name="mail-type"/><div class="check animal"><div class="inside"></div></div><label class="menu2-label">Animals</label></li>
+                <li><input type="radio" name="mail-type"/><div class="check code"><div class="inside"></div></div><label class="menu2-label">Code</label></li>
+            </ul>
+            <ul class="menu-ul" id="menu-ul-profile">
+                <li>
+                    <span id="profile-image"></span>
+                    <span class="menu-icon profile"></span>
+                </li>
+            </ul>
+        </div>
+        <div id = "work-area" class="col-9 col-m-9">
+            <div id = "heading-bar">
+                <label id="heading-label">Inbox</label>
+                <input type="text" id="searchBox" value=""/>
+            </div>
+            <div id="heading-shortcut">
+                <span class="shortcut-icon back-btn"></span>
+                <span class="shortcut-icon fav"></span>
+                <span class="shortcut-icon clip"></span>
+                <span class="shortcut-icon down-btn"></span>
+                <span id="sorting-menus-section">
+                <label class="sorting-menus" id="sorting-menu-alphabetically">Alphabetically</label>
+                <label class="sorting-menus sorting-menus-selected" id="sorting-menu-recent">Recent</label>
+                    </span>
+            </div>
+            <div id = "inbox-table">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Jeremy Sallee</td>
+                        <td><span class="table-content-highlight highlight-work">WORK</span> Production Expansion</td>
+                        <td>Today <font color="black">8.30pm</font></td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Jacob Hubertus</td>
+                        <td>Street Photography</td>
+                        <td>Today <font color="black">7.22pm</font></td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Justin Pervorse</td>
+                        <td>Mailchimp Illustrations</td>
+                        <td>Yesterday <font color="black">2.30am</font></td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Gustav Butlex</td>
+                        <td><span class="table-content-highlight highlight-fashion">FASHION</span> New Collection</td>
+                        <td>Yesterday <font color="black">1.01am</font></td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Victor Ericxon</td>
+                        <td><span id="mail-attachment"></span>Theories of Design</td>
+                        <td>16th November</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Sarah Parmenter</td>
+                        <td>UX Exercise</td>
+                        <td>15th November</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Meagan Fisher</td>
+                        <td><span class="table-content-highlight highlight-animals">ANIMALS</span> Owls</td>
+                        <td>14th November</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>August Berglund</td>
+                        <td><span class="table-content-highlight highlight-code">CODE</span> HTML + CSS Tutorials?</td>
+                        <td>14th November</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Alicia Agneson</td>
+                        <td>What I have learned about creating...</td>
+                        <td>10th October</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Rick Brunstedt</td>
+                        <td>Train Crossings</td>
+                        <td>1st June</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Shaun Moynihan</td>
+                        <td><span class="table-content-highlight highlight-code">CODE</span> SASS</td>
+                        <td>28th May</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Antony Lagoon</td>
+                        <td>Playstation 3?</td>
+                        <td>28th May</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Rick Brunstedt</td>
+                        <td>Learning HTML and CSS</td>
+                        <td>27th May</td>
+                    </tr>
+                        <tr>
+                        <td><span class="profile-img"></span></td>
+                        <td>Sarah Parmenter</td>
+                        <td>Brooklyn Beta</td>
+                        <td>1st January</td>
+                    </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> 
