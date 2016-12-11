@@ -186,16 +186,47 @@ ul li .check::before {
   margin-top : -4px;
 }
 
-input[type=radio]:checked ~ .check {
+#mail-fashion:checked ~ .check {
   border: 2px solid #4BBE7D;
 }
 
-input[type=radio]:checked ~ .check::before{
+#mail-fashion:checked ~ .check::before{
   background: #4BBE7D;
+}
+
+#mail-work:checked ~ .check {
+  border: 2px solid #41b2ce;
+}
+
+#mail-work:checked ~ .check::before{
+  background: #41b2ce;
 }
 
 input[type=radio]:checked ~ label{
   color: white;
+  font-weight: bold;
+}
+
+
+#mail-code:checked ~ .check {
+  border: 2px solid orange;
+}
+
+#mail-code:checked ~ .check::before{
+  background: orange;
+}
+
+
+#mail-animal:checked ~ .check {
+  border: 2px solid #fa7041;
+}
+
+#mail-animal:checked ~ .check::before{
+  background: #fa7041;
+}
+
+#left-menu ul li{
+	cursor: pointer;
 }
 
 .main-selected{
@@ -257,10 +288,6 @@ input[type=radio]:checked ~ label{
     position: relative;
 	padding-left: 40px;
 	top: -20px;    
-}
-
-.sub-main-selected{
-    background-color: grey !important;
 }
 
 .profile{
